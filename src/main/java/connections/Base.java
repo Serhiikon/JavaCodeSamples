@@ -1,5 +1,7 @@
 package connections;
 
+import staticconnections.StaticBase;
+
 public class Base {
     /*--------------Fields--------------*/
     public String a = "public field: Base class";
@@ -23,6 +25,13 @@ public class Base {
         Base o = new Base();
         Inner i = o.new Inner();
         i.caller();
+        o.callStatic();
+    }
+    public void callStatic() {
+        System.out.println();
+        System.out.println(StaticBase.a); //access to public static field
+        System.out.println();
+        StaticBase.sayA(); //access to public static method
     }
     /*--------------Inner Classes--------------*/
     public class Inner {
