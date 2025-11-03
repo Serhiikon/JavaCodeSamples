@@ -37,7 +37,6 @@ public class Base {
     }
     public static void main(String[] args) {
         new Base().new Inner().call();
-        InnerStatic.callStatic();
     }
     /*--------------Inner Classes--------------*/
     public class Inner {
@@ -50,35 +49,14 @@ public class Base {
             System.out.println(b);
             System.out.println(c);
             System.out.println(d);
+            System.out.println(e);
+            System.out.println(f);
+            System.out.println(g);
+            System.out.println(h);
             sayA();
             sayB();
             sayC();
             sayD();
-            System.out.println();
-            System.out.println("The INNER OBJECT has direct access to the "
-                    + "private, default, protected and public elements "
-                    + "of the OUTER CLASS");
-            System.out.println(e);
-            System.out.println(f);
-            System.out.println(g);
-            System.out.println(h);
-            sayE();
-            sayF();
-            sayG();
-            sayH();
-        }
-    }
-    public static class InnerStatic {
-        /*--------------Methods--------------*/
-        public static void callStatic() {
-            System.out.println();
-            System.out.println("The INNER CLASS has direct access to the "
-                    + "private, default, protected and public elements "
-                    + "of the OUTER CLASS");
-            System.out.println(e);
-            System.out.println(f);
-            System.out.println(g);
-            System.out.println(h);
             sayE();
             sayF();
             sayG();
