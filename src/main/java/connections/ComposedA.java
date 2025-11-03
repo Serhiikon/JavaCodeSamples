@@ -5,7 +5,7 @@ public class ComposedA {
     public void call() {
         Base b = new Base();
         System.out.println("The COMPOSED OBJECT has indirect access "
-                + "to the default and public elements of the ELEMENT OBJECT");
+                + "to the default and public elements of the LOCAL OBJECT");
         System.out.println(b.a);
         System.out.println(b.d);
         System.out.println(Base.e);
