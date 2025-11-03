@@ -1,9 +1,9 @@
 package connections;
 
-public class ChildA extends Base {
+public class SubobjectA extends Base {
     /*--------------Methods--------------*/
     public void caller() {
-        System.out.println("The CHILD OBJECT has direct access to the "
+        System.out.println("The SUBOBJECT has direct access to the "
                 + "default, protected and public elements of the PARENT OBJECT");
         System.out.println(a);
         System.out.println(b);
@@ -19,6 +19,6 @@ public class ChildA extends Base {
         sayH();
     }
     public static void main(String[] args) {
-        new ChildA().caller();
+        new SubobjectA().caller();
     }
 }

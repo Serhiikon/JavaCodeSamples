@@ -2,10 +2,10 @@ package connections.innerpackage;
 
 import connections.Base;
 
-public class ChildB extends Base {
+public class SubobjectB extends Base {
     /*--------------Methods--------------*/
     public void call() {
-        System.out.println("The CHILD OBJECT has direct access to the "
+        System.out.println("The SUBOBJECT has direct access to the "
                 + "protected and public elements of the PARENT OBJECT");
         System.out.println(a);
         System.out.println(b);
@@ -17,6 +17,6 @@ public class ChildB extends Base {
         sayF();
     }
     public static void main(String[] args) {
-        new ChildB().call();
+        new SubobjectB().call();
     }
 }
