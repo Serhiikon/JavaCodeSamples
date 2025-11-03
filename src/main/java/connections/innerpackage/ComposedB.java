@@ -4,14 +4,19 @@ import connections.Base;
 
 public class ComposedB {
     /*--------------Methods--------------*/
-    public void caller() {
-        Base l = new Base();
-        System.out.println(l.a); //access to public field
+    public void call() {
+        Base b = new Base();
+        System.out.println("The COMPOSED OBJECT has indirect access "
+               + "to the public elements of the ELEMENT OBJECT");
+        System.out.println(b.a);
+        b.sayA();
         System.out.println();
-        l.sayA(); //access to public method
+        System.out.println("The COMPOSED OBJECT has indirect access "
+               + "to the public elements of the ELEMENT CLASS");
+        System.out.println(Base.e);
+        Base.sayE();
     }
     public static void main(String[] args) {
-        ComposedB h = new ComposedB();
-        h.caller();
+        new ComposedB().call();
     }
 }

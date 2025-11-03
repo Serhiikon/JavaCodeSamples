@@ -36,17 +36,16 @@ public class Base {
         System.out.println("default static method");
     }
     public static void main(String[] args) {
-        Inner i = new Base().new Inner();
-        i.call();
-        i.callStatic();
+        new Base().new Inner().call();
         InnerStatic.callStatic();
     }
     /*--------------Inner Classes--------------*/
     public class Inner {
         /*--------------Methods--------------*/
         public void call() {
-            System.out.println("The INNER OBJECT has private, default, "
-                    + "protected and public access to the OUTER OBJECT");
+            System.out.println("The INNER OBJECT has direct access to the "
+                    + "private, default, protected and public elements "
+                    + "of the OUTER OBJECT");
             System.out.println(a);
             System.out.println(b);
             System.out.println(c);
@@ -55,10 +54,10 @@ public class Base {
             sayB();
             sayC();
             sayD();
-        }
-        public void callStatic() {
-            System.out.println("The INNER OBJECT has private static, default static, "
-                    + "protected static and public static access to the OUTER CLASS");
+            System.out.println();
+            System.out.println("The INNER OBJECT has direct access to the "
+                    + "private, default, protected and public elements "
+                    + "of the OUTER CLASS");
             System.out.println(e);
             System.out.println(f);
             System.out.println(g);
@@ -73,8 +72,9 @@ public class Base {
         /*--------------Methods--------------*/
         public static void callStatic() {
             System.out.println();
-            System.out.println("The INNER CLASS has private static, default static, "
-                    + "protected static and public static access to the OUTER CLASS");
+            System.out.println("The INNER CLASS has direct access to the "
+                    + "private, default, protected and public elements "
+                    + "of the OUTER CLASS");
             System.out.println(e);
             System.out.println(f);
             System.out.println(g);
