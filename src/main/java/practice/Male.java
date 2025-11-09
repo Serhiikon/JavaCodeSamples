@@ -31,34 +31,55 @@ public class Male implements Person {
     }
 }
 
-//Object: Forum
-//    Interface objects: -
-//    Local objects: Person, Name
+/*
 
-//Object: Male
-//    Interface objects: Person
-//    Local objects: Name[]
+(Forum)
+    Is:
+        -
+    Has:
+        Person
+        Name
 
-//Object: Female
-//    Interface objects: Person
-//    Local objects: Name[]
+(Male)
+    Is:
+        Person
+    Has:
+        Name[]
 
-//Object: Male.RareName
-//    Interface objects: Name
-//    Local objects: -
+(Female)
+    Is:
+        Person
+    Has:
+        Name[]
 
-//Object: Male.SimpleName
-//    Interface objects: Name
-//    Local objects: -
+(Male.RareName)
+    Is:
+        Name
+    Has:
+        -
 
-//Object: Male.ExoticName
-//    Interface objects: Name
-//    Local objects: -
+(Male.SimpleName)
+    Is:
+        Name
+    Has:
+        -
 
-//Object: Name
-//    Interface objects: -
-//    Local objects: -
+(Male.ExoticName)
+    Is:
+        Name
+    Has:
+        -
 
-//Object: Person
-//    Interface objects: -
-//    Local objects: -
+(Name)
+    Is:
+        -
+    Has:
+        -
+
+(Person)
+    Is:
+        -
+    Has:
+        -
+
+*/
