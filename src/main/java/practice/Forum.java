@@ -11,3 +11,40 @@ public class Forum {
         }
     }
 }
+
+/*
+
+Forum
+is: -
+has: Person
+     Name
+
+Male
+is: Person
+has: Name[]
+
+Female
+is: Person
+has: Name[]
+
+Male.RareName
+is: Name
+has: -
+
+Male.SimpleName
+is: Name
+has: -
+
+Male.ExoticName
+is: Name
+has: -
+
+Name
+is: -
+has: -
+
+Person
+is: -
+has: -
+
+*/
