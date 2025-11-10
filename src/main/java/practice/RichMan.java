@@ -5,19 +5,19 @@ public class RichMan implements Person {
     public class Car implements Property {
         @Override
         public void getProperty() {
-            System.out.println("Ferrari");
+            System.out.println("Ferrari supercar");
         }
     }
     public class RealEstate implements Property {
         @Override
         public void getProperty() {
-            System.out.println("Townhouse");
+            System.out.println("Townhouse real estate");
         }
     }
     public class BankAccount implements Property {
         @Override
         public void getProperty() {
-            System.out.println("1000000$");
+            System.out.println("1000000$ bank account");
         }
     }
     /*--------------Methods--------------*/

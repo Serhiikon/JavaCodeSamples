@@ -14,32 +14,44 @@ public class Declaration {
 
 /*
 
-Forum
+Declaration
 is: -
 has: Person
-     Name
+     Property
 
-Male
+PoorMan
 is: Person
-has: Name[]
+has: Property[]
 
-Female
+RichMan
 is: Person
-has: Name[]
+has: Property[]
 
-Male.RareName
-is: Name
+PoorMan.Watch
+is: Property
 has: -
 
-Male.SimpleName
-is: Name
+PoorMan.Cellphone
+is: Property
 has: -
 
-Male.ExoticName
-is: Name
+PoorMan.Scooter
+is: Property
 has: -
 
-Name
+RichMan.Car
+is: Property
+has: -
+
+RichMan.Townhouse
+is: Property
+has: -
+
+RichMan.BankAccount
+is: Property
+has: -
+
+Property
 is: -
 has: -
 
