@@ -17,17 +17,19 @@ public class Outer {
     /*--------------Fields---------------*/
     public Name eng;
     public Name fr;
-    public Name pl = new Name() { // anonymous inner class
-        @Override
-        public void sayName() {
-            System.out.println("Tadeush");
-        }
-    };
-    public Name tr = () -> System.out.println("Amir"); // lambda expression
+    public Name pl;
+    public Name tr;
     /*-----------Constructors------------*/
     public Outer() {
         eng = new EnglishName();
         fr = new FrenchName();
+        pl = new Name() { // anonymous inner class
+            @Override
+            public void sayName() {
+                System.out.println("Tadeush");
+            }
+        };
+        tr = () -> System.out.println("Amir"); // lambda expression
     }
     /*--------------Methods--------------*/
     public void sayAllNames() {
