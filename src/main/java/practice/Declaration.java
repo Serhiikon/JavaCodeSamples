@@ -19,6 +19,10 @@ is: -
 has: Person
      Property
 
+Person
+is: -
+has: -
+
 PoorMan
 is: Person
 has: Property[]
@@ -26,6 +30,10 @@ has: Property[]
 RichMan
 is: Person
 has: Property[]
+
+Property
+is: -
+has: -
 
 PoorMan.Watch
 is: Property
@@ -49,14 +57,6 @@ has: -
 
 RichMan.BankAccount
 is: Property
-has: -
-
-Property
-is: -
-has: -
-
-Person
-is: -
 has: -
 
 */
