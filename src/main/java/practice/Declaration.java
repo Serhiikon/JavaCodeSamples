@@ -16,8 +16,7 @@ public class Declaration {
 
 Declaration
 is: -
-has: Person
-     Property
+has: Person, Property
 
 Person
 is: -
