@@ -1,6 +1,6 @@
 package practice;
 
-// Interface for name objects
+// Interface for different names
 public interface Name {
     void sayName();
 }
