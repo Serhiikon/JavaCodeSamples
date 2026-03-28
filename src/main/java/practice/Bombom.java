@@ -45,6 +45,26 @@ public class Bombom {
     }
 }
 
+class Nomnom {
+    public void sayFood() {
+        System.out.print("The food is ");
+    }
+}
+
+class Komkom extends Nomnom {
+    public void sayAmericanFood() {
+        sayFood();
+        System.out.println("Hot-dog");
+    }
+}
+
+class Yomyom extends Nomnom {
+    public void sayItalianFood() {
+        sayFood();
+        System.out.println("Pizza");
+    }
+}
+
 interface Pompom {
     void sayCity();
     default void sayAnimal() {
@@ -73,26 +93,6 @@ class Romrom implements Pompom {
     public void sayAnimal() {
         Pompom.super.sayAnimal();
         System.out.println("Cow");
-    }
-}
-
-class Nomnom {
-    public void sayFood() {
-        System.out.print("The food is ");
-    }
-}
-
-class Komkom extends Nomnom {
-    public void sayAmericanFood() {
-        sayFood();
-        System.out.println("Hot-dog");
-    }
-}
-
-class Yomyom extends Nomnom {
-    public void sayItalianFood() {
-        sayFood();
-        System.out.println("Pizza");
     }
 }
 
