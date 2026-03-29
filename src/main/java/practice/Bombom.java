@@ -4,7 +4,7 @@ import java.util.function.Consumer;
 
 public class Bombom {
     public static void main(String[] args) {
-        // Reusability
+        // Extension
         sayFirstName();
         saySecondName();
         Komkom k = new Komkom();
@@ -28,25 +28,25 @@ public class Bombom {
         r4.run();
         c.accept(p1);
         c.accept(p2);
-        // Polymorphism & Reusability
+        // Polymorphism & Extension
         p1.sayAnimal();
         p2.sayAnimal();
     }
     private static void sayName() {
         System.out.print("The name is ");
     }
-    private static void sayFirstName() {
+    public static void sayFirstName() {
         sayName();
         System.out.println("Sarah");
     }
-    private static void saySecondName() {
+    public static void saySecondName() {
         sayName();
         System.out.println("Jane");
     }
 }
 
 class Nomnom {
-    public void sayFood() {
+    void sayFood() {
         System.out.print("The food is ");
     }
 }
