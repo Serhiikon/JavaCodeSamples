@@ -4,9 +4,10 @@ import java.util.function.Consumer;
 
 public class Bombom {
     public static void main(String[] args) {
-        // Extension
+        // Method Extraction
         sayFirstName();
         saySecondName();
+        // Class Extraction
         Komkom k = new Komkom();
         Yomyom y = new Yomyom();
         k.sayAmericanFood();
@@ -16,7 +17,9 @@ public class Bombom {
         Pompom p2 = new Romrom();
         p1.sayCity();
         p2.sayCity();
-        Somsom s =  new Somsom();
+        p1.sayAnimal();
+        p2.sayAnimal();
+        Somsom s = new Somsom();
         Runnable r1 = s::sayShape;
         Runnable r2 = Somsom::sayColor;
         Runnable r3 = () -> System.out.println("The season is Winter");
@@ -28,9 +31,6 @@ public class Bombom {
         r4.run();
         c.accept(p1);
         c.accept(p2);
-        // Polymorphism & Extension
-        p1.sayAnimal();
-        p2.sayAnimal();
     }
     private static void sayName() {
         System.out.print("The name is ");
