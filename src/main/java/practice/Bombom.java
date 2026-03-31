@@ -12,7 +12,7 @@ public class Bombom {
         Yomyom y = new Yomyom();
         k.sayAmericanFood();
         y.sayItalianFood();
-        // Polymorphism
+        // Interface Extraction & Polymorphism
         Pompom p1 = new Tomtom();
         Pompom p2 = new Romrom();
         p1.sayCity();
